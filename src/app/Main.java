@@ -107,7 +107,7 @@ public class Main {
             // Tambahkan buku yang dipinjam ke temporaryBookList
             addToTemporaryBookList(book);
         } else {
-            System.out.println("Member atau buku tidak ditemukan. Silakan coba lagi.");
+            System.out.println("\nMember atau buku tidak ditemukan. Silakan coba lagi.\n");
         }
     }
 
@@ -125,7 +125,7 @@ public class Main {
             // Panggil metode untuk menambahkan stok buku setelah pengembalian
             RepositoryBookForLoan.increaseStockAfterReturn(loanOrder.getLoanBook());
         } else {
-            System.out.println("Loan Order tidak ditemukan. Silakan coba lagi.");
+            System.out.println("\nLoan Order tidak ditemukan. Silakan coba lagi.\n");
         }
     }
 
